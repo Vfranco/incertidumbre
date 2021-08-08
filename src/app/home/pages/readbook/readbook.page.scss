@@ -1,0 +1,68 @@
+.ui {
+  &-content {
+    height: 100vh;
+  }
+
+  &-book-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+
+    h1 {
+      margin: 0;
+      font-weight: bold;
+      color: #444;
+    }
+
+    small {
+      color: #ccc;
+    }
+  }
+
+  &-book-darkmode {
+    display: flex;
+    align-items: center;
+
+    ion-toggle {
+      margin-left: 6px;
+    }
+  }
+
+  &-image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  &-paragraph {
+    overflow-y: auto;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+  }
+
+  &-dark-mode {
+    background-color: #444;
+
+    & .ui-book-myTitle {
+      h1 {
+        color: #fff;
+      }
+    }
+
+    & .ui-book-title {
+      border-bottom: 1px solid #444;
+    }
+
+    & .ui-paragraph {
+      p {
+        color: #fff;
+      }
+    }
+  }
+}

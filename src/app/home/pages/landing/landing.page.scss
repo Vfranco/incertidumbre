@@ -1,0 +1,41 @@
+@import '../../../../../src/theme/variables.scss';
+
+.ui {
+  &-title {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+
+    h1 {
+      font-size: $ui-title-size;
+      margin: 0;
+      color: #444;
+    }
+
+    small {
+      color: #ccc;
+    }
+  }
+
+  &-slider-books {
+    margin: 3.5rem auto;
+  }
+
+  &-slide-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-slide-book-title {
+    text-align: center;
+    margin-top: 1rem;
+
+    h2 {
+      color: #444;
+    }
+
+    small {
+      color: #ccc;
+    }
+  }
+}

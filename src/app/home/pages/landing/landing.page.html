@@ -1,0 +1,19 @@
+<ion-content [fullscreen]="true" class="ui">
+  <div class="ui-title">
+    <h1>Selecciona un numero</h1>
+    <small>Lectura de menos de 1 minuto</small>
+  </div>
+  <div class="ui-slider-books">
+    <ion-slides mode="ios">
+      <ion-slide class="ui-slide-item" *ngFor="let book of myBooks; let number = index;">
+        <img [src]="book.coverBook" (click)="goToBook(book.nameBook)">
+        <div class="ui-slide-book-title">
+          <h2>{{book.title}}</h2>
+          <ion-chip>
+            <ion-label color="success">{{number + 1}}</ion-label>
+          </ion-chip>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>

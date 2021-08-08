@@ -1,0 +1,41 @@
+<ion-content [fullscreen]="true">
+  <div class="ui-content" [class.ui-dark-mode]="darkMode">
+    <div class="ui-book-title" [class.ui-dark-mode]="darkMode">
+      <div class="ui-book-myTitle">
+        <h1>El Reloj</h1>
+        <small>1 min de lectura</small>
+      </div>
+      <div class="ui-book-darkmode">
+        <ion-icon slot="start" name="moon"></ion-icon>
+        <ion-toggle (click)="setDarkMode()"></ion-toggle>
+      </div>
+    </div>
+    <div class="ui-image">
+      <img src="./assets/images/{{bookParam}}.png">
+    </div>
+    <div class="ui-paragraph">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet orci ipsum. Aliquam sit amet
+        sodales felis. Fusce eget magna fermentum, elementum justo nec, condimentum arcu.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet orci ipsum. Aliquam sit amet
+        sodales felis. Fusce eget magna fermentum, elementum justo nec, condimentum arcu.</p>
+    </div>
+  </div>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button (click)="goToHome()">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button>
+        <ion-icon name="share"></ion-icon>
+        <ion-label>Compartir</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button (click)="goToChapters()">
+        <ion-icon name="book"></ion-icon>
+        <ion-label>Capitulos</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
